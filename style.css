@@ -1,0 +1,179 @@
+/* reset margin of webpage */
+body, h1, h2, h3, p, a {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Georgia','Brush Script MT';
+    color: #333;
+    background-color: lightblue;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #003366;
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+}
+main {
+    max-width: 1303px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: lightblue;
+}
+
+section h2 {
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 6px;
+    color: #003366;
+    text-align: center;
+    font-style: italic;
+}
+section h3 {
+    font-size: 25px;
+    margin-bottom: 5px;
+    color: #003366;
+    text-align: center;
+    font-style: italic;
+}
+.menu{
+    margin-right: 70%;
+}
+.food{
+    margin-left: 585px;
+    font-size: 20px;
+}
+.welcom{
+    margin-right: 70%;
+}
+img {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(209, 55, 55, 0.2);
+}
+
+iframe {
+    max-width: 70%;
+    margin-left: 15%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.package {
+    background-color: lightblue;
+    padding: 20px;
+    margin-left: 0%;
+}
+.package p {
+    font-size: 18px;
+    color: #555;
+    margin: auto;
+    margin-left: 39%;
+}
+.title_package{
+    margin-left: 40%;
+}
+.contact{
+    margin-top: 150px;
+    text-align: center;
+    margin-left: auto;
+    font-size: 30px;
+    font-style: italic;
+    margin-bottom: 200px;
+    color: #003366;
+}
+ /* Image gallery container */
+ .gallery-container {
+    max-width: 100%;
+    position: relative;
+}
+
+/* Individual images */
+.gallery-image {
+    display: none;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Navigation buttons */
+.gallery-nav {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.gallery-nav button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 5px;
+}
+    .dropdown {
+        position: absolute;
+        display: inline-block;
+        top: 20px;
+        right: 0;
+        margin-right: 20px; /* Adjust the margin as needed */
+    }
+
+    .dropbtn {
+        background-color: #3498db;
+        color: white;
+        padding: 12px 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        min-width: 160px;
+
+    }
+
+    .dropbtn:hover {
+        background-color: #2980b9;
+         
+    }
+
+    .dropdown-content {
+        display: none;
+        position: relative;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #3498db;
+        color: white;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+.text-center{
+    text-align: center;
+}
+.paypal-button:hover {
+    background-color: green;
+}
+
+footer {
+    background-color: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid #001f3f;
+    margin-bottom: 0;
+}

@@ -1,0 +1,26 @@
+/*STYLE FOR IMG.HTML*/
+
+body{
+    background-color: lightblue;
+}
+h2{
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+    margin-left: auto;
+    margin-top: 40px;
+
+}
+img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(209, 55, 55, 0.2);
+}
+.footer{
+    margin-top: 50px;
+}

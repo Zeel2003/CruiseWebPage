@@ -1,0 +1,80 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Royal Caribbean</title>
+
+  <!-- External CSS stylesheet link -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="booking.css">
+
+
+  <!-- External JavaScript file link -->
+  <script src="script.js"></script>
+
+  <!-- External Font link (Google Fonts) -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+</head>
+
+<body>
+  <header>
+      <h2 class="booking">Welcome to Royal Caribbean</h2>
+      
+      <!-- Dropdown button for menu -->
+      <div class="dropdown">
+          <button class="dropbtn">Menu &#9662;</button>
+          <div class="dropdown-content">
+              <a href="index.html">Home</a>
+              <a href="ships.html" target="_blank">Our Ships</a>
+              <a href="all_menu.pdf" target="_blank">Onboard Menu</a>
+              <a href="registration.html" target="_blank">Registration</a>
+              <a href="aboutus.html" target="_blank">About Us</a>
+              <a href="contact.html" target="_blank">Contact Us</a>
+              <!-- Add more dropdown menu items as needed -->
+          </div>
+      </div>
+  </header>
+    <form action="reservation.php" method="post">
+        <div class="elem-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+        </div>
+        <div class="elem-group">
+          <label for="email">Your E-mail</label>
+          <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+        </div>
+        <div class="elem-group">
+          <label for="phone">Your Phone</label>
+          <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+        </div>
+        <br>
+        <div class="elem-group inlined">
+          <label for="adult">Adults</label>
+          <input type="number" id="adult" name="total_adults" placeholder="0" min="0" required>
+        </div>
+        <div class="elem-group inlined">
+          <label for="child">Children</label>
+          <input type="number" id="child" name="total_children" placeholder="0" min="0" required>
+        </div>
+        <div class="elem-group inlined">
+          <label for="checkin-date">Departure Date</label>
+          <input type="date" id="checkin-date" name="checkin" required>
+        </div>
+        <div class="elem-group inlined">
+          <label for="checkout-date">Return Date</label>
+          <input type="date" id="checkout-date" name="checkout" required>
+        </div>
+        <div class="elem-group">
+          <label for="room-selection">Select Departure Port</label>
+          <select id="room-selection" name="room_preference" required>
+              <option value="">Choose a port from the List</option>
+              <option value="connecting">Port Canaveral (Orlando), FL</option>
+              <option value="adjoining">Tampa, FL</option>
+              <option value="adjacent">Miami, FL</option>
+              <option value="adjacent">New York, NY</option>
+              <option value="adjacent">Cape Liberty(New York), NJ</option>
+          </select>
+        </div>
+        <button type="submit">Continue to Payment</button>
+      </form>
+      
+</body>
